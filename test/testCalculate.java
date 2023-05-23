@@ -1,5 +1,5 @@
+//Csajbók-Reményi László SZOFT I/2/E 2023.05.23. Dolgozat_2
 import static org.junit.Assert.assertEquals;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

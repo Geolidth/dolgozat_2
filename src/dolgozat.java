@@ -10,12 +10,14 @@ public class dolgozat {
         double b = 0;
         double c = 0;
         double V = 0;
-        System.out.println("Feladat 0358");
+        System.out.println("\\-->  Feladat 0358  <--\\");
+        System.out.println("\\-->  A feladat egy Paralelepipedon térfogatát számolja ki a megadott képlettel  <--\\");
+        System.out.println("\\-->  https://szit.hu/doku.php?id=oktatas:programozas:feladatok:altalanos#feladat_0358  <--\\\n");
         a = getSides("Kérem az 'a' oldalt: ");
         b = getSides("Kérem a 'b' oldalt: ");
         c = getSides("Kérem a 'c' oldalt: ");
         V = clacParalelepipedon(a, b, c);
-        System.out.println("A kapott eredmény: " + V);
+        System.out.println("A Paralelepipedon térfogata: " + V);
     }
 
     static public double getSides(String text) {

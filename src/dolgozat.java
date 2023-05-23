@@ -21,10 +21,11 @@ public class dolgozat {
     }
 
     static public double getSides(String text) {
-        Scanner scan = new Scanner(System.in);
+        String strNumber ;
+        do{Scanner scan = new Scanner(System.in);
         System.out.print(text);
-        String strNumber = scan.nextLine();
-        checkInput(strNumber, text);
+        strNumber= scan.nextLine();
+        }while(!checkInput(strNumber, text));
         double number= Double.parseDouble(strNumber);
         return number;
     }
@@ -42,8 +43,11 @@ public class dolgozat {
     }
 
 
-    static public double clacParalelepipedon(Double a, Double b, Double c) {
-        Double number = a * b * c;
+    static public double clacParalelepipedon(double a, double b, double c) {
+        double number=-1.0;
+        if(a!=0 && b!=0 && c!=0){
+           number = a*b*c; 
+        }
         return number;
     }
 }

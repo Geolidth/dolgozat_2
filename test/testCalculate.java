@@ -31,4 +31,11 @@ public class testCalculate {
         double expected=1;
         assertEquals(expected,actual,0.1);
     }
+
+    @Test                                                                       //A -1 érték nem lehetséges érték, ezt akkor kaőjuk, ha nem jó valamelyik oldal
+    public void testClacParalelepipedon4(){
+        double actual = this.dolg.clacParalelepipedon(0.0, 1.0, 1.0);
+        double expected=-1;
+        assertEquals(expected,actual,0.1);
+    }
 }

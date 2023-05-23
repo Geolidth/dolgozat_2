@@ -13,9 +13,9 @@ public class dolgozat {
         System.out.println("\\-->  Feladat 0358  <--\\");
         System.out.println("\\-->  A feladat egy Paralelepipedon térfogatát számolja ki a megadott képlettel  <--\\");
         System.out.println("\\-->  https://szit.hu/doku.php?id=oktatas:programozas:feladatok:altalanos#feladat_0358  <--\\\n");
-        a = getSides("Kérem az 'a' oldalt: ");
-        b = getSides("Kérem a 'b' oldalt: ");
-        c = getSides("Kérem a 'c' oldalt: ");
+        a = getSides("'a'");
+        b = getSides("'b'");
+        c = getSides("'c'");
         V = clacParalelepipedon(a, b, c);
         System.out.println("A Paralelepipedon térfogata: " + V);
     }
@@ -23,7 +23,7 @@ public class dolgozat {
     static public double getSides(String text) {
         String strNumber ;
         do{Scanner scan = new Scanner(System.in);
-        System.out.print(text);
+        System.out.print("Kérem "+ text + " oldalt: ");
         strNumber= scan.nextLine();
         }while(!checkInput(strNumber, text));
         double number= Double.parseDouble(strNumber);

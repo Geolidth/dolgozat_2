@@ -27,13 +27,16 @@ public class dolgozat {
         return number;
     }
 
-    public static void checkInput(String input, String text){
+    public static boolean checkInput(String input, String text){
+        boolean inputCehck= true;
         if(input.matches("[0-9.]+") && !input.matches("[0.]+")){
             System.out.println(text + " oldal helyes értékű!");
         }
         else{
             System.out.println(text + " oldal nem helyes értékű!");
+            inputCehck=false;
         }
+        return inputCehck;
     }
 
 
